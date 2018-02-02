@@ -13,7 +13,7 @@ albumInfo: Album;
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
-    this._productService.getAlbum(1).subscribe((response) =>  this.albumInfo = response);
+    this._productService.getAlbum(1).subscribe(response =>  this.albumInfo = response);
   }
 
 }
